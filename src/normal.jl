@@ -47,10 +47,10 @@ Variance: $$\sigma^2$$ = $(sigma^2)
 """
 
 # ╔═╡ b940194a-7de2-11eb-2f76-ad1abefdb11d
-N = Normal(mu, sigma^2);
+N = Normal(mu, round(sigma^2, digits = 2));
 
 # ╔═╡ b15f8620-7de2-11eb-323f-2f98407f01f3
-plot(x, pdf.(N, x), label = "Normal( $mu, $(sigma^2) )", 
+plot(x, pdf.(N, x), label = "Normal( $mu, $(sigma^2)",
 	linewidth = 2, 	ylims = (0, 0.45 / sigma^0.5))
 
 # ╔═╡ Cell order:
